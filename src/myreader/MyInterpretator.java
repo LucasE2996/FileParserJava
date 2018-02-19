@@ -26,6 +26,5 @@ public abstract class MyInterpretator {
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
-
     }
 }
