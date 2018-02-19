@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41130f0-5432-410f-9b9f-787bd06ff0dc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/myreader/Configurations.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/myreader/ParseFileToList.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/myreader/Header.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myfile/MyFile.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myfile/MyFile.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config1.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config2.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/HeadReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyInterpretator.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyInterpretator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyReader.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyReader.class" />
       <change beforePath="$PROJECT_DIR$/src/myfile/MyFile.java" afterPath="$PROJECT_DIR$/src/myfile/MyFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/Config1.java" afterPath="$PROJECT_DIR$/src/myreader/Config1.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/Config2.java" afterPath="$PROJECT_DIR$/src/myreader/Config2.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/HeadReader.java" afterPath="$PROJECT_DIR$/src/myreader/HeadReader.java" />
+      <change beforePath="$PROJECT_DIR$/src/myreader/HeadReader.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/myreader/MyInterpretator.java" afterPath="$PROJECT_DIR$/src/myreader/MyInterpretator.java" />
       <change beforePath="$PROJECT_DIR$/src/myreader/MyReader.java" afterPath="$PROJECT_DIR$/src/myreader/MyReader.java" />
+      <change beforePath="$PROJECT_DIR$/src/myreader/ParseFileToList.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,70 +27,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="MyReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myreader/MyReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myfile/MyFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeadReader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/myreader/HeadReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="124">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
+                <element signature="method#read#0;class#MyReader#0" expanded="false" />
+                <element signature="method#readData#0;class#MyReader#0" expanded="false" />
+                <element signature="method#saveFile#0;class#MyReader#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myreader/MyReader.java">
+      <file leaf-file-name="MyFile.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/myfile/MyFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyInterpretator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myreader/MyInterpretator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configurations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myreader/Configurations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
+                <element signature="method#parseDatatoString#0;class#MyFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -96,6 +58,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -114,12 +77,18 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/myreader/Config1.java" />
         <option value="$PROJECT_DIR$/src/myreader/Config2.java" />
-        <option value="$PROJECT_DIR$/src/myfile/MyFile.java" />
-        <option value="$PROJECT_DIR$/src/myreader/MyInterpretator.java" />
         <option value="$PROJECT_DIR$/src/myreader/Configurations.java" />
         <option value="$PROJECT_DIR$/src/myreader/HeadReader.java" />
+        <option value="$PROJECT_DIR$/src/myreader/ParseFileDataToList.java" />
         <option value="$PROJECT_DIR$/src/myreader/ParseFileToList.java" />
+        <option value="$PROJECT_DIR$/src/parser/MyParser.java" />
+        <option value="$PROJECT_DIR$/src/parser/DataToListParser.java" />
+        <option value="$PROJECT_DIR$/src/myreader/Header.java" />
+        <option value="$PROJECT_DIR$/src/myreader/FileDataToListParser.java" />
+        <option value="$PROJECT_DIR$/src/myfile/MyFile.java" />
+        <option value="$PROJECT_DIR$/src/myreader/FileToListParser.java" />
         <option value="$PROJECT_DIR$/src/myreader/MyReader.java" />
+        <option value="$PROJECT_DIR$/src/myreader/MyInterpretator.java" />
       </list>
     </option>
   </component>
@@ -165,12 +134,6 @@
               <item name="FileParserJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="FileParserJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FileParserJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FileParserJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dbfile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FileParserJava" type="b2602c69:ProjectViewProjectNode" />
@@ -329,12 +292,12 @@
       <option name="presentableId" value="Default" />
       <updated>1519054779919</updated>
       <workItem from="1519054783223" duration="2385000" />
-      <workItem from="1519057181342" duration="954000" />
+      <workItem from="1519057181342" duration="5115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3339000" />
+    <option name="totallyTimeSpent" value="7500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
@@ -342,6 +305,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -364,7 +328,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -394,7 +357,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="method#parseDatatoString#0;class#MyFile#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -424,7 +389,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="method#read#0;class#MyReader#0" expanded="false" />
+            <element signature="method#readData#0;class#MyReader#0" expanded="false" />
+            <element signature="method#saveFile#0;class#MyReader#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -432,6 +401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -439,25 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myreader/Config2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,31 +423,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myreader/MyInterpretator.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myreader/ParseFileToList.java">
+    <entry file="file://$PROJECT_DIR$/src/parser/DataToListParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myreader/MyReader.java">
+    <entry file="file://$PROJECT_DIR$/src/parser/MyParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myreader/HeadReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myreader/FileDataToListParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myreader/FileToListParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myreader/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,24 +498,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myfile/MyFile.java">
+    <entry file="file://$PROJECT_DIR$/src/myreader/MyInterpretator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="method#loadDataInColumns#0;class#MyInterpretator#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/myreader/HeadReader.java">
+    <entry file="file://$PROJECT_DIR$/src/myreader/MyReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="124">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
+            <element signature="method#read#0;class#MyReader#0" expanded="false" />
+            <element signature="method#readData#0;class#MyReader#0" expanded="false" />
+            <element signature="method#saveFile#0;class#MyReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myreader/Config2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding>
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">myreader.Configurations</node>
+            <node x="" y="">dbfile</node>
+            <node x="" y="">myreader.Header</node>
+            <node x="" y="">myfile.MyFile</node>
+            <node x="" y="">myreader.Config1</node>
+            <node x="" y="">myreader.Config2</node>
+            <node x="" y="">myreader.MyInterpretator</node>
+            <node x="" y="">tests</node>
+            <node x="" y="">parser</node>
+            <node x="" y="">myreader.MyReader</node>
+            <node x="" y="">Main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.091683569979716" x="266.5" y="224.57636566332218" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>Project Files</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myfile/MyFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="method#parseDatatoString#0;class#MyFile#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -14,14 +14,6 @@ public abstract class MyInterpretator {
 
     abstract protected void setDefaultConfig();
 
-    private ArrayList getColumn(int column) throws NoSuchElementException {
-        return dataColumn.entrySet().stream()
-                .filter(e -> e.getKey() == column)
-                .findFirst()
-                .get()
-                .getValue();
-    }
-
     protected void loadDataInColumns(ArrayList<String> lines) throws NullPointerException {
         String[] lineData;
         try {

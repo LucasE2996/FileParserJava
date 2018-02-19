@@ -6,17 +6,23 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class HeadReader {
+public class Header {
 
     private final ArrayList<String> header;
 
-    HeadReader(ArrayList<String> header) {
+    Header(ArrayList<String> header) {
         this.header = header;
     }
 
-    protected Date getDate() throws ParseException {
+    protected Date getDate() {
         final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        return df.parse(header.get(1));
+        Date date = null;
+        try {
+            date = df.parse(header.get(1));
+        }catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return date;
     }
 
     protected int getConfigNumber() {
@@ -26,4 +32,5 @@ public class HeadReader {
     protected String getAuthor() {
         return header.get(2);
     }
+
 }

@@ -21,11 +21,11 @@ public class MyFile {
         System.out.println(configNumber);
         System.out.println(date);
         System.out.println(author);
-        ArrayList<String> dataContent = parseDatatoString();
+        ArrayList<String> dataContent = parseDatatoString(data);
         dataContent.forEach(System.out::println);
     }
 
-    private ArrayList<String> parseDatatoString() {
+    private ArrayList<String> parseDatatoString(HashMap<Integer, ArrayList> data) {
         ArrayList<String> lines = new ArrayList<>();
         for (int i = 0; i < data.size(); i++) {
             for (int j = 0; j < data.get(i).size(); j++) {
@@ -38,4 +38,5 @@ public class MyFile {
         }
         return lines;
     }
+
 }

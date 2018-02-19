@@ -16,34 +16,18 @@ public class MyReader {
 
     private ArrayList<String> lines;
     private HashMap<Integer, ArrayList> data;
-    private String author;
-    private Date date;
-    private int configNumber;
     private final Configurations configurations;
-    private ParseFileToList parser;
 
     public MyReader() {
         lines =  new ArrayList<>();
         configurations = new Configurations();
-        parser = new ParseFileToList();
     }
 
     public MyFile read(String path) {
-        parser.saveFile(path);
-        readHeader();
-        readData(configNumber);
-        return new MyFile(configNumber, author, date, data);
-    }
-
-    private void readHeader() {
-        final HeadReader head = new HeadReader(lines);
-        author = head.getAuthor();
-        try {
-            date = head.getDate();
-            configNumber = head.getConfigNumber();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        lines = saveFile(path);
+        Header header = new Header(lines);
+        readData(header.getConfigNumber());
+        return new MyFile(header.getConfigNumber(), header.getAuthor(), header.getDate(), data);
     }
 
     // This class will delegate the task of reading the data of a file depending on its configuration number.
@@ -53,8 +37,16 @@ public class MyReader {
                 .findFirst()
                 .get()
                 .getValue();
-
         interpretator.loadDataInColumns(lines);
         data = interpretator.dataColumn;
+    }
+
+    private ArrayList<String> saveFile(String path) {
+        try (Stream<String> stream = Files.lines(Paths.get(path))) {
+            stream.forEach(lines::add);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return lines;
     }
 }
