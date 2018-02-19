@@ -1,6 +1,6 @@
 package myreader;
 
-import file.MyFile;
+import myfile.MyFile;
 
 import java.io.IOException;
 import java.nio.file.Files;

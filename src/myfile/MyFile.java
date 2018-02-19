@@ -1,6 +1,4 @@
-package file;
-
-import myreader.MyInterpretator;
+package myfile;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,15 +22,19 @@ public class MyFile {
         System.out.println(configNumber);
         System.out.println(date);
         System.out.println(author);
+        dataContent = parseDatatoString();
         dataContent.forEach(System.out::println);
     }
 
     private ArrayList<String> parseDatatoString() {
         ArrayList<String> lines = new ArrayList<>();
-
         for (int i = 0; i < data.size(); i++) {
-            for (int j = 0; j < data.size(); j++) {
-                lines.add(data.get(i).get(j).toString());
+            for (int j = 0; j < data.get(i).size(); j++) {
+                if(i == 0) {
+                    lines.add(data.get(i).get(j).toString());
+                } else {
+                    lines.set(j, lines.get(j) + "\t" + data.get(i).get(j).toString());
+                }
             }
         }
         return lines;

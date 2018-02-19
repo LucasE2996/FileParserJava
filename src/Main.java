@@ -1,5 +1,4 @@
-import file.MyFile;
-import myreader.Config1;
+import myfile.MyFile;
 import myreader.MyReader;
 
 public class Main {
@@ -8,7 +7,7 @@ public class Main {
         MyReader reader = new MyReader();
         MyFile file;
 
-        file = reader.read("/home/marshmello/Documents/Github/FocusNetworks/desafio2/secondTest.txt");
+        file = reader.read("C:\\Users\\Focusnetworks\\Documents\\GitHub\\FileParserJava\\src\\dbfile\\fileTest.txt");
 
         file.printContent();
 
