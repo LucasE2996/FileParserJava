@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41130f0-5432-410f-9b9f-787bd06ff0dc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/myreader/Header.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myfile/MyFile.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myfile/MyFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config1.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config2.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/HeadReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyInterpretator.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyInterpretator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyReader.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyReader.class" />
-      <change beforePath="$PROJECT_DIR$/src/myfile/MyFile.java" afterPath="$PROJECT_DIR$/src/myfile/MyFile.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/HeadReader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/MyInterpretator.java" afterPath="$PROJECT_DIR$/src/myreader/MyInterpretator.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/MyReader.java" afterPath="$PROJECT_DIR$/src/myreader/MyReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/ParseFileToList.java" afterPath="" />
-    </list>
+    <list default="true" id="b41130f0-5432-410f-9b9f-787bd06ff0dc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -292,12 +277,12 @@
       <option name="presentableId" value="Default" />
       <updated>1519054779919</updated>
       <workItem from="1519054783223" duration="2385000" />
-      <workItem from="1519057181342" duration="5115000" />
+      <workItem from="1519057181342" duration="5139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7500000" />
+    <option name="totallyTimeSpent" value="7524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
