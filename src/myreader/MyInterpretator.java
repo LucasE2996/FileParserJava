@@ -37,7 +37,7 @@ public abstract class MyInterpretator {
 
     }
 
-    protected Object getDataAtLineColumn(int columnNumber, int lineNumber) throws NoSuchElementException{
+    public Object getDataAtLineColumn(int columnNumber, int lineNumber) throws NoSuchElementException{
         return getColumn(columnNumber).get(lineNumber);
     }
 }

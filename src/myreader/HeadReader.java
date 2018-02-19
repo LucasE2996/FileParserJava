@@ -19,7 +19,7 @@ public class HeadReader {
         return df.parse(header.get(1));
     }
 
-    protected int getConfigNumber() throws ParseException{
+    protected int getConfigNumber() {
         // replaceAll is to remove all the whitespaces that might appear
         return Integer.parseInt(header.get(0).trim());
     }

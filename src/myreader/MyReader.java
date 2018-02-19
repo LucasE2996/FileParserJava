@@ -1,5 +1,7 @@
 package myreader;
 
+import file.MyFile;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -27,10 +29,11 @@ public class MyReader {
     }
 
     // Routene
-    public void read(String path) {
+    public MyFile read(String path) {
         saveFile(path);
         readHeader();
         readData(configNumber);
+        return new MyFile(configNumber, author, date, data);
     }
 
     private void saveFile(String path) {
