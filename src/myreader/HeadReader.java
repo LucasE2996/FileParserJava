@@ -10,7 +10,7 @@ public class HeadReader {
 
     private final ArrayList<String> header;
 
-    protected HeadReader(ArrayList<String> header) {
+    HeadReader(ArrayList<String> header) {
         this.header = header;
     }
 
@@ -20,7 +20,6 @@ public class HeadReader {
     }
 
     protected int getConfigNumber() {
-        // replaceAll is to remove all the whitespaces that might appear
         return Integer.parseInt(header.get(0).trim());
     }
 

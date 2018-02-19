@@ -15,33 +15,24 @@ import java.util.stream.Stream;
 public class MyReader {
 
     private ArrayList<String> lines;
-    // Integer = linha; ArrayList = coluna
     private HashMap<Integer, ArrayList> data;
     private String author;
     private Date date;
     private int configNumber;
-    private HashMap<Integer, MyInterpretator> interpretators;
+    private final Configurations configurations;
+    private ParseFileToList parser;
 
     public MyReader() {
         lines =  new ArrayList<>();
-        interpretators = new HashMap<>();
-        addConfigs();
+        configurations = new Configurations();
+        parser = new ParseFileToList();
     }
 
-    // Routene
     public MyFile read(String path) {
-        saveFile(path);
+        parser.saveFile(path);
         readHeader();
         readData(configNumber);
         return new MyFile(configNumber, author, date, data);
-    }
-
-    private void saveFile(String path) {
-        try (Stream<String> stream = Files.lines(Paths.get(path))) {
-            stream.forEach(lines::add);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     private void readHeader() {
@@ -57,7 +48,7 @@ public class MyReader {
 
     // This class will delegate the task of reading the data of a file depending on its configuration number.
     private void readData(int configNumber) {
-        final MyInterpretator interpretator = interpretators.entrySet().stream()
+        final MyInterpretator interpretator = configurations.getInterpretators().entrySet().stream()
                 .filter(e -> e.getKey() == configNumber)
                 .findFirst()
                 .get()
@@ -65,10 +56,5 @@ public class MyReader {
 
         interpretator.loadDataInColumns(lines);
         data = interpretator.dataColumn;
-    }
-
-    private void addConfigs() {
-        interpretators.put(1, new Config1());
-        interpretators.put(2, new Config2());
     }
 }

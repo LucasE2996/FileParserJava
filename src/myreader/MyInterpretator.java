@@ -8,13 +8,13 @@ public abstract class MyInterpretator {
 
     protected HashMap<Integer, ArrayList> dataColumn = new HashMap<>();
 
-    protected MyInterpretator() {
+    MyInterpretator() {
         setDefaultConfig();
     }
 
     abstract protected void setDefaultConfig();
 
-    public ArrayList getColumn(int column) throws NoSuchElementException {
+    private ArrayList getColumn(int column) throws NoSuchElementException {
         return dataColumn.entrySet().stream()
                 .filter(e -> e.getKey() == column)
                 .findFirst()
@@ -35,9 +35,5 @@ public abstract class MyInterpretator {
             e.printStackTrace();
         }
 
-    }
-
-    public Object getDataAtLineColumn(int columnNumber, int lineNumber) throws NoSuchElementException{
-        return getColumn(columnNumber).get(lineNumber);
     }
 }
