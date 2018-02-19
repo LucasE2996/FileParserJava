@@ -7,9 +7,10 @@ public class Main {
         MyReader reader = new MyReader();
         MyFile file;
 
-        file = reader.read("C:\\Users\\Focusnetworks\\Documents\\GitHub\\FileParserJava\\src\\dbfile\\fileTest.txt");
+//        file = reader.read("C:\\Users\\Focusnetworks\\Documents\\GitHub\\FileParserJava\\src\\dbfile\\fileTest.txt");
+//        file.printContent();
 
+        file = reader.read("C:\\Users\\Focusnetworks\\Documents\\GitHub\\FileParserJava\\src\\dbfile\\fileTest02.txt");
         file.printContent();
-
     }
 }

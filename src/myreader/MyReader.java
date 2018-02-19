@@ -69,5 +69,6 @@ public class MyReader {
 
     private void addConfigs() {
         interpretators.put(1, new Config1());
+        interpretators.put(2, new Config2());
     }
 }
