@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Config2 extends MyInterpretator {
 
-    public Config2() {
+    Config2() {
         super();
     }
 

@@ -6,7 +6,7 @@ import java.util.Date;
 public class Config1 extends MyInterpretator {
 
 
-    protected Config1() {
+    Config1() {
         super();
     }
 

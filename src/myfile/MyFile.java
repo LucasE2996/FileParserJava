@@ -9,7 +9,6 @@ public class MyFile {
     private Date date;
     private String author;
     private HashMap<Integer, ArrayList> data;
-    private ArrayList<String> dataContent;
 
     public MyFile(int configNumber, String author, Date date, HashMap<Integer, ArrayList> data) {
         this.configNumber = configNumber;
@@ -22,7 +21,7 @@ public class MyFile {
         System.out.println(configNumber);
         System.out.println(date);
         System.out.println(author);
-        dataContent = parseDatatoString();
+        ArrayList<String> dataContent = parseDatatoString();
         dataContent.forEach(System.out::println);
     }
 
