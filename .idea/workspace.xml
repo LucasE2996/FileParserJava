@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41130f0-5432-410f-9b9f-787bd06ff0dc" name="Default" comment="Continue refactoring - build">
+    <list default="true" id="b41130f0-5432-410f-9b9f-787bd06ff0dc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/Main.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myfile/MyFile.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myfile/MyFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Config2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/Configurations.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyInterpretator.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyReader.class" afterPath="$PROJECT_DIR$/out/production/FileParserJava/myreader/MyReader.class" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/myreader/MyReader.java" afterPath="$PROJECT_DIR$/src/myreader/MyReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/parser/DateParser.java" afterPath="$PROJECT_DIR$/src/parser/DateParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/parser/FloatParser.java" afterPath="$PROJECT_DIR$/src/parser/FloatParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/parser/IntegerParser.java" afterPath="$PROJECT_DIR$/src/parser/IntegerParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/parser/StringParser.java" afterPath="$PROJECT_DIR$/src/parser/StringParser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myfile/MyFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="488">
+              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -64,11 +52,21 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/parser/DateParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,10 +130,10 @@
         <option value="$PROJECT_DIR$/src/myfile/MyFile.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/parser/IntegerParser.java" />
-        <option value="$PROJECT_DIR$/src/parser/DateParser.java" />
         <option value="$PROJECT_DIR$/src/parser/FloatParser.java" />
         <option value="$PROJECT_DIR$/src/parser/StringParser.java" />
         <option value="$PROJECT_DIR$/src/myreader/MyReader.java" />
+        <option value="$PROJECT_DIR$/src/parser/DateParser.java" />
       </list>
     </option>
   </component>
@@ -354,7 +352,7 @@
       <workItem from="1519057181342" duration="5139000" />
       <workItem from="1519069231892" duration="715000" />
       <workItem from="1519070320131" duration="4962000" />
-      <workItem from="1519141520736" duration="4116000" />
+      <workItem from="1519141520736" duration="4685000" />
     </task>
     <task id="LOCAL-00001" summary="Continue refactoring - build">
       <created>1519143518444</created>
@@ -363,11 +361,25 @@
       <option name="project" value="LOCAL" />
       <updated>1519143518444</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Continue refactoring - readData in MyReader">
+      <created>1519145693042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519145693042</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Continue refactoring - DateParser">
+      <created>1519146120114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519146120114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17317000" />
+    <option name="totallyTimeSpent" value="17886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
@@ -380,7 +392,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -409,11 +421,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Continue refactoring - build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continue refactoring - build" />
+    <MESSAGE value="Continue refactoring - readData in MyReader" />
+    <MESSAGE value="Continue refactoring - DateParser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continue refactoring - DateParser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -617,14 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/DateParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/FloatParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -643,16 +649,6 @@
           <folding>
             <element signature="e#120#121#0" expanded="true" />
             <element signature="e#148#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,10 +681,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/myfile/MyFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="488">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/DateParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
