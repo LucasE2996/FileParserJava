@@ -1,8 +1,8 @@
 package parser;
 
 public class IntegerParser implements MyParser {
-
-    public Integer convert(String value) {
+    @Override
+    public Object getValue(String value) {
         return Integer.parseInt(value);
     }
 }

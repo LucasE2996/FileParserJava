@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 public class MyReader {
 
     private ArrayList<String> lines;
-    private HashMap<Integer, Column> data;
+    private HashMap<Integer, Column<Object>> data;
     private HashMap<Integer, ArrayList<MyParser>> configurations;
 
     public MyReader(HashMap<Integer, ArrayList<MyParser>> configurations) {
@@ -38,7 +38,11 @@ public class MyReader {
                .get().getValue();
         ArrayList<String[]> characters = new ArrayList<>();
         lines.forEach(line -> characters.add(line.split("\t")));
-
+        for (int i = 0; i < characters.size(); i++) {
+            ArrayList<Object> dataColumn = new ArrayList<>();
+            dataColumn.add(parsers.get(i).getValue(characters.get(i)[i]));
+            data.put(i, new Column<>(dataColumn));
+        }
     }
 
     private ArrayList<String> saveFile(String path) {

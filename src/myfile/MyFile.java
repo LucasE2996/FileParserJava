@@ -10,9 +10,9 @@ public class MyFile {
     private int configNumber;
     private Date date;
     private String author;
-    private HashMap<Integer, Column> data;
+    private HashMap<Integer, Column<Object>> data;
 
-    public MyFile(int configNumber, String author, Date date, HashMap<Integer, Column> data) {
+    public MyFile(int configNumber, String author, Date date, HashMap<Integer, Column<Object>> data) {
         this.configNumber = configNumber;
         this.author = author;
         this.date = date;
@@ -27,7 +27,7 @@ public class MyFile {
         dataContent.forEach(System.out::println);
     }
 
-    private ArrayList<String> parseDatatoString(HashMap<Integer, Column> data) {
+    private ArrayList<String> parseDatatoString(HashMap<Integer, Column<Object>> data) {
         ArrayList<String> lines = new ArrayList<>();
         for (int i = 0; i < data.size(); i++) {
             for (int j = 0; j < data.get(i).getData().size(); j++) {

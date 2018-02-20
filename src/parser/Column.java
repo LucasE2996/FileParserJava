@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Column<T> {
     ArrayList<T> data;
 
-    Column(ArrayList<T> data){
+    public Column(ArrayList<T> data){
         this.data = data;
     }
 
