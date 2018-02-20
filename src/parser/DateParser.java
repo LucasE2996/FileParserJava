@@ -8,7 +8,7 @@ import java.util.Date;
 public class DateParser implements MyParser {
     @Override
     public Date getValue(String inputDate) {
-        final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        final DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
         Date date = null;
         try {
             date = df.parse(inputDate);
