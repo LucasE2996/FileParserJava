@@ -263,7 +263,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+configurations: Configurations",
+											"text": "+configuration: Configurations",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -5828,7 +5828,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFhryxGmGyTcAI="
 							},
-							"name": "configurations",
+							"name": "configuration",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,

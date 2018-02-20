@@ -1,7 +1,8 @@
 package parser;
 
 public class FloatParser implements MyParser {
-    public Float convert(String value) {
+    @Override
+    public Object getValue(String value) {
         return Float.parseFloat(value);
     }
 }

@@ -1,13 +1,13 @@
 package myreader;
 
 import myfile.MyFile;
+import parser.Column;
+import parser.MyParser;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
@@ -15,12 +15,12 @@ import java.util.stream.Stream;
 public class MyReader {
 
     private ArrayList<String> lines;
-    private HashMap<Integer, ArrayList> data;
-    private final Configurations configurations;
+    private HashMap<Integer, Column> data;
+    private HashMap<Integer, ArrayList<MyParser>> configurations;
 
-    public MyReader() {
+    public MyReader(HashMap<Integer, ArrayList<MyParser>> configurations) {
         lines =  new ArrayList<>();
-        configurations = new Configurations();
+        this.configurations = configurations;
     }
 
     public MyFile read(String path) {
@@ -32,13 +32,13 @@ public class MyReader {
 
     // This class will delegate the task of reading the data of a file depending on its configuration number.
     private void readData(int configNumber) {
-        final MyInterpretator interpretator = configurations.getInterpretators().entrySet().stream()
-                .filter(e -> e.getKey() == configNumber)
-                .findFirst()
-                .get()
-                .getValue();
-        interpretator.loadDataInColumns(lines);
-        data = interpretator.dataColumn;
+       ArrayList<MyParser> parsers = configurations.entrySet().stream()
+               .filter(e -> e.getKey() == configNumber)
+               .findFirst()
+               .get().getValue();
+        ArrayList<String[]> characters = new ArrayList<>();
+        lines.forEach(line -> characters.add(line.split("\t")));
+
     }
 
     private ArrayList<String> saveFile(String path) {

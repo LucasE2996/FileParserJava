@@ -1,5 +1,5 @@
 package parser;
 
-interface MyParser {
+public interface MyParser<T> {
     public T getValue(String value);
 }
