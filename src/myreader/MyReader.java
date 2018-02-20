@@ -21,6 +21,7 @@ public class MyReader {
     public MyReader(HashMap<Integer, ArrayList<MyParser>> configurations) {
         lines =  new ArrayList<>();
         this.configurations = configurations;
+        data = new HashMap<>();
     }
 
     public MyFile read(String path) {
@@ -30,7 +31,6 @@ public class MyReader {
         return new MyFile(header.getConfigNumber(), header.getAuthor(), header.getDate(), data);
     }
 
-    // This class will delegate the task of reading the data of a file depending on its configuration number.
     private void readData(int configNumber) {
        ArrayList<MyParser> parsers = configurations.entrySet().stream()
                .filter(e -> e.getKey() == configNumber)
@@ -38,10 +38,14 @@ public class MyReader {
                .get().getValue();
         ArrayList<String[]> characters = new ArrayList<>();
         lines.forEach(line -> characters.add(line.split("\t")));
-        for (int i = 0; i < characters.size(); i++) {
+        int counter = 0;
+        for (int j = 0; j < characters.get(3).length; j++) {
             ArrayList<Object> dataColumn = new ArrayList<>();
-            dataColumn.add(parsers.get(i).getValue(characters.get(i)[i]));
-            data.put(i, new Column<>(dataColumn));
+            for (int i = 3; i < characters.size(); i++) {
+                dataColumn.add(parsers.get(j).getValue(characters.get(i)[counter]));
+            }
+            data.put(j, new Column<>(dataColumn));
+            counter++;
         }
     }
 

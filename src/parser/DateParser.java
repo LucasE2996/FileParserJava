@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class DateParser implements MyParser {
     @Override
-    public Object getValue(String inputDate) {
+    public Date getValue(String inputDate) {
         final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = null;
         try {
