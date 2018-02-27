@@ -33,8 +33,8 @@ public class MyReader {
                 readData(header.getConfigNumber(lines)));
     }
 
-    private ArrayList<Column<Object>> readData(int configNumber) {
-        ArrayList<Column<Object>> data = new ArrayList<>();
+    private ArrayList<Column<?>> readData(int configNumber) {
+        ArrayList<Column<?>> data = new ArrayList<>();
         ArrayList<MyParser> parsers = getParsersConfig(configNumber);
         ArrayList<String[]> characters = new ArrayList<>(); // change this later
         lines.forEach(line -> characters.add(line.split("\t")));

@@ -6,7 +6,7 @@ public class Column<T> {
 
     private final ArrayList<T> data;
 
-    public Column(ArrayList<T> data){
+    public Column(ArrayList<T> data) {
         this.data = data;
     }
 

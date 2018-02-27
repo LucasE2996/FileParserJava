@@ -8,9 +8,9 @@ public class MyFile {
     private int configNumber;
     private Date date;
     private String author;
-    private ArrayList<Column<Object>> data;
+    private ArrayList<Column<?>> data;
 
-    public MyFile(int configNumber, String author, Date date, ArrayList<Column<Object>> data) {
+    public MyFile(int configNumber, String author, Date date, ArrayList<Column<?>> data) {
         this.configNumber = configNumber;
         this.author = author;
         this.date = date;
@@ -29,7 +29,7 @@ public class MyFile {
         return date;
     }
 
-    public ArrayList<Column<Object>> getData() {
+    public ArrayList<Column<?>> getData() {
         return data;
     }
 }
