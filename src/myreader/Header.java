@@ -8,29 +8,23 @@ import java.util.Date;
 
 public class Header {
 
-    private final ArrayList<String> header;
-
-    Header(ArrayList<String> header) {
-        this.header = header;
-    }
-
-    protected Date getDate() {
+    Date getDate(ArrayList<String> lines) {
         final DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = null;
         try {
-            date = df.parse(header.get(1));
+            date = df.parse(lines.get(1));
         }catch (ParseException e) {
             e.printStackTrace();
         }
         return date;
     }
 
-    protected int getConfigNumber() {
-        return Integer.parseInt(header.get(0).trim());
+    int getConfigNumber(ArrayList<String> lines) {
+        return Integer.parseInt(lines.get(0).trim());
     }
 
-    protected String getAuthor() {
-        return header.get(2);
+    String getAuthor(ArrayList<String> lines) {
+        return lines.get(2);
     }
 
 }

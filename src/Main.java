@@ -23,12 +23,28 @@ public class Main {
 
 
         MyReader reader = new MyReader(configurations);
-        MyFile file;
-
-        file = reader.read("C:\\Users\\Focusnetworks\\Documents\\GitHub\\FileParserJava\\src\\dbfile\\fileTest.txt");
-        file.printContent();
+        MyFile file = reader.read("/home/marshmello/Documents/Github/FileParserJava/src/dbfile/fileTest.txt");
+        System.out.println(file.getConfigNumber());
+        System.out.println(file.getDate());
+        System.out.println(file.getAuthor());
+        parseDataToString(file.getData()).forEach(System.out::println);
 
 //        file = reader.read("C:\\Users\\Focusnetworks\\Documents\\GitHub\\FileParserJava\\src\\dbfile\\fileTest02.txt");
-//        file.printContent();
+//        file.getContent();
+    }
+
+    // move this code to some frontend class later
+    private static ArrayList<String> parseDataToString(ArrayList<Column<Object>> data) {
+        ArrayList<String> lines = new ArrayList<>();
+        for (int i = 0; i < data.size(); i++) {
+            for (int j = 0; j < data.get(i).getData().size(); j++) {
+                if(i == 0) {
+                    lines.add(data.get(i).getData().get(j).toString());
+                } else {
+                    lines.set(j, lines.get(j) + "\t" + data.get(i).getData().get(j).toString());
+                }
+            }
+        }
+        return lines;
     }
 }

@@ -9,34 +9,34 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 import java.util.stream.Stream;
 
 
 public class MyReader {
 
     private ArrayList<String> lines;
-    private HashMap<Integer, Column<Object>> data;
     private HashMap<Integer, ArrayList<MyParser>> configurations;
+    private final Header header = new Header();
 
     public MyReader(HashMap<Integer, ArrayList<MyParser>> configurations) {
         lines =  new ArrayList<>();
         this.configurations = configurations;
-        data = new HashMap<>();
     }
 
     public MyFile read(String path) {
         lines = saveFile(path);
-        Header header = new Header(lines);
-        readData(header.getConfigNumber());
-        return new MyFile(header.getConfigNumber(), header.getAuthor(), header.getDate(), data);
+        readData(header.getConfigNumber(lines));
+        return new MyFile(header.getConfigNumber(lines),
+                header.getAuthor(lines),
+                header.getDate(lines),
+                readData(header.getConfigNumber(lines)));
     }
 
-    private void readData(int configNumber) {
-       ArrayList<MyParser> parsers = configurations.entrySet().stream()
-               .filter(e -> e.getKey() == configNumber)
-               .findFirst()
-               .get().getValue();
-        ArrayList<String[]> characters = new ArrayList<>();
+    private ArrayList<Column<Object>> readData(int configNumber) {
+        ArrayList<Column<Object>> data = new ArrayList<>();
+        ArrayList<MyParser> parsers = getParsersConfig(configNumber);
+        ArrayList<String[]> characters = new ArrayList<>(); // change this later
         lines.forEach(line -> characters.add(line.split("\t")));
         int counter = 0;
         for (int j = 0; j < characters.get(3).length; j++) {
@@ -44,9 +44,10 @@ public class MyReader {
             for (int i = 3; i < characters.size(); i++) {
                 dataColumn.add(parsers.get(j).getValue(characters.get(i)[counter]));
             }
-            data.put(j, new Column<>(dataColumn));
+            data.add(new Column<>(dataColumn));
             counter++;
         }
+        return data;
     }
 
     private ArrayList<String> saveFile(String path) {
@@ -56,5 +57,13 @@ public class MyReader {
             e.printStackTrace();
         }
         return lines;
+    }
+
+    private ArrayList<MyParser> getParsersConfig(int configNumber) {
+        return configurations.entrySet().stream()
+                .filter(e -> e.getKey() == configNumber)
+                .findAny()
+                .orElseThrow(NoSuchElementException::new)
+                .getValue();
     }
 }
